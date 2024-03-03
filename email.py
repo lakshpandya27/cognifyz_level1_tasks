@@ -1,0 +1,12 @@
+import re  
+  
+def validate_email(email):  
+    if re.match(r"[^@]+@[^@]+\.[^@]+", email):  
+        return True  
+    return False  
+  
+email = input("Enter e-mail address:"); 
+if validate_email(email):  
+    print("Valid email address")  
+else:  
+    print("Invalid email address")  
